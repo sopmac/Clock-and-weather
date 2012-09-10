@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Clock and weather</title>
+	<!-- css -->
+	<link type="text/css" href="css/style.css" media="screen" rel="stylesheet" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="js/jquery.zweatherfeed.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="clocks">
+			<div class="singleClock">
+				<h3>London</h3>
+	
+				<div class="londonHover">
+					<div id="london"></div>
+					<div id="londonWeather"></div>
+				</div>
+			</div>
+	
+	
+			<div class="singleClock">
+				<h3>Cyprus</h3>
+	
+				<div class="cyprusHover">
+					<div id="cyprus"></div>
+					<div id="cyprusWeather"></div>
+				</div>
+			</div>
+			
+			<div class="singleClock">
+				<h3>Mexico</h3>
+	
+				<div class="mexicoHover">
+					<div id="mexico"></div>
+					<div id="mexicoWeather"></div>
+				</div>
+			</div>
+	
+			<div class="singleClock last">
+				<h3>Moscow</h3>
+	
+				<div class="moscowHover">
+					<div id="moscow"></div>
+					<div id="moscowWeather"></div>
+				</div>
+			</div>
+	
+	
+	
+			<script type="text/javascript">
+			 
+			 	var londonClock = new Clock("london", "-1");
+			 	londonClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
+	
+			 	var cyprusClock = new Clock("cyprus", "1");
+			 	cyprusClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
+	
+			 	var mexicoClock = new Clock("mexico", "5");
+			 	mexicoClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
+	
+	
+			 	var moscowClock = new Clock("moscow", "2");
+			 	moscowClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
+	
+	
+			 </script>
+			 <p class="info">move mouse over the clock to see the weather</p>
+		</div> <!--// end of well -->
+	</div>
+
+</body>
+</html>

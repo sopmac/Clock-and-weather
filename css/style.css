@@ -1,0 +1,71 @@
+/*added by Ricardo Campos*/
+
+.wrapper{
+	margin: 0 auto;
+	width: 440px;
+}
+
+/*---------------- Clock ------------*/
+.clocks{
+	min-height:110px;
+	padding-bottom:10px;
+	margin-top: 10px;
+	padding: 5px 19px;
+}
+.clocks .singleClock{
+	float: left;
+	margin-right:48px;
+}
+.clocks .singleClock.last{
+	margin-right:0;
+}
+.clocks .info{
+	color:#666;
+	margin-top: 150px;
+	margin-bottom: 0;
+	font-size: 19px;
+	text-align: center;
+}
+/* ---------- wheather -------*/
+.londonHover, .cyprusHover, .moscowHover, .mexicoHover{
+	position:absolute;
+	cursor: pointer;
+}
+#londonWeather, #cyprusWeather, #moscowWeather, #mexicoWeather{
+	position:relative;
+	display:none;
+	left:-230px;
+	top:-30px;
+	z-index: 20;
+}
+.weatherFeed {
+	border-radius: 20px;
+	-webki-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border:5px solid #ccc;
+	background:#333;
+	width: 280px;
+}
+.weatherFeed a { color: #fff; }
+.weatherFeed a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.weatherItem {
+	padding: 0.8em;
+	text-align: right;
+	color:#fff;
+}
+.weatherCity { text-transform: uppercase; }
+.weatherTemp {
+	padding:10px 0;
+	font-size: 2.8em;
+	font-weight: bold;
+}
+.weatherDesc, .weatherCity { font-weight: bold; }
+.weatherDesc { margin-bottom: 0.4em; }
+.weatherRange, .weatherWind { font-size: 0.8em; }
+.weatherLink {
+	text-align: left;
+	font-size: 0.8em;
+}
