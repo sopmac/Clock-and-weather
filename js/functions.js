@@ -55,7 +55,7 @@
 
 jQuery(document).ready(function(){
 
-  //Guernsey weather the clas names are different
+  //London weather the class names are different
   jQuery('#londonWeather').weatherfeed(['UKXX0085']);
     jQuery(".londonHover").mouseover(function(){
       jQuery("#londonWeather").show();
