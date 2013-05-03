@@ -8,8 +8,10 @@
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
-	<script type="text/javascript" src="js/raphael-min.js"></script>
 	<script type="text/javascript" src="js/jquery.zweatherfeed.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/highcharts-more.js"></script>
+	<script type="text/javascript" src="js/clocks.js"></script>
 </head>
 
 <body>
@@ -18,38 +20,12 @@
 		<div class="clocks">
 			<div class="singleClock">
 				<h3>London</h3>
-	
+
 				<div class="londonHover">
+					<small class="digi-time"></small>
 					<div id="london"></div>
 					<div id="londonWeather"></div>
-				</div>
-			</div>
-	
-	
-			<div class="singleClock">
-				<h3>Cyprus</h3>
-	
-				<div class="cyprusHover">
-					<div id="cyprus"></div>
-					<div id="cyprusWeather"></div>
-				</div>
-			</div>
-			
-			<div class="singleClock">
-				<h3>Mexico</h3>
-	
-				<div class="mexicoHover">
-					<div id="mexico"></div>
-					<div id="mexicoWeather"></div>
-				</div>
-			</div>
-	
-			<div class="singleClock last">
-				<h3>Moscow</h3>
-	
-				<div class="moscowHover">
-					<div id="moscow"></div>
-					<div id="moscowWeather"></div>
+					<small class="date"></small>
 				</div>
 			</div>
 	
@@ -57,23 +33,13 @@
 	
 			<script type="text/javascript">
 			 
-			 	var londonClock = new Clock("london", "-1");
-			 	londonClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
-	
-			 	var cyprusClock = new Clock("cyprus", "1");
-			 	cyprusClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
-	
-			 	var mexicoClock = new Clock("mexico", "5");
-			 	mexicoClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
-	
-	
-			 	var moscowClock = new Clock("moscow", "2");
-			 	moscowClock.drawClock("75","#fff","#000","#000","#000","#000","#000");
+			 	var londonClock = new Clock("london", "1");
+			 	londonClock.drawClock("#fff","#000","#000","#000","#000","#000");
 	
 	
 			 </script>
 			 <p class="info">move mouse over the clock to see the weather</p>
-		</div> <!--// end of well -->
+		</div> <!--// end of clocks -->
 	</div>
 
 </body>
