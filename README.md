@@ -1,7 +1,7 @@
 Time Zone Clocks and mose over Weather 
 ================
 
-[![](https://raw.github.com/Claromentis/Clock-and-weather/master/screenshot.png)](https://raw.github.com/Claromentis/Clock-and-weather/master/screenshot.png)
+[![](https://raw.github.com/sopmac/Clock-and-weather/master/screenshot.png)](https://raw.github.com/sopmac/Clock-and-weather/master/screenshot.png)
 
 Object Orientated time zone clocks using highcharts.
 
